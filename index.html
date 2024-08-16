@@ -19,19 +19,37 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
 
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
 
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css">
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+    />
 
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css">
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+    />
 
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css">
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+    />
 
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css">
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+    />
 
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css">
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+    />
 
-    <link rel="shortcut icon" href="logo/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="logo/icon.png" type="image/x-icon" />
 
     <style>
       * {
@@ -60,33 +78,31 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
       .toast {
-        position: relative;
-        top: 1rem;
-        right: 1rem;
+        position: fixed;
+        top: 20px;
         z-index: 50;
-        background-color: #1ed3b5;
-        color: #ffffff;
-        padding: 0.5rem 1rem;
-        border-radius: 0.375rem;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
+        right: 20px;
+        background-color: #15c7a7;
+        color: white;
+        padding: 16px;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        opacity: 1;
+        transition: opacity 0.5s ease;
       }
-  
+
       .toast-message {
-        margin-bottom: 0.5rem;
+        font-size: 14px;
       }
-  
+
       .toast-progress-bar {
         height: 4px;
+        background-color: #080808;
         position: absolute;
-        background: #104b43;
-        transition: width 3s linear;
-        width: 0;
         bottom: 0;
-      left: 0;
-      right: 0;
+        left: 0;
+        width: 0;
+        transition: width 3.5s ease;
       }
     </style>
   </head>
@@ -184,8 +200,8 @@
             </h1>
             <p class="mb-8 text-lg text-white">
               Hi, I'm <strong><u>Allan Justine Mascariñas</u></strong
-              >, a fullstack web developer with a passion for creating beautiful
-              and functional websites.
+              >, a full-stack web developer with a passion for creating
+              beautiful and functional websites.
             </p>
             <div class="flex justify-center mb-8 space-x-4">
               <a
@@ -242,6 +258,7 @@
         </div>
       </section>
     </div>
+
     <div class="container mx-auto">
       <section id="projects" class="py-10" data-aos="fade-up">
         <h2 class="mb-2 text-3xl font-bold text-center text-cyan-500">
@@ -252,418 +269,890 @@
         <div class="overflow-x-auto snap-x snap-mandatory scroll-smooth">
           <div class="flex space-x-8">
             <div
-            class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-start w-80"
-            data-aos="zoom-in"
-          >
-            <div id="default-carousel" class="relative w-full" data-carousel="static">
-              <div class="relative overflow-hidden rounded-lg h-[200px] md:h-[230px]">
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                      <img src="images/9.png" class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                  </div>
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                      <img src="images/6.png" class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                  </div>
-              </div>
-              <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 rtl:space-x-reverse">
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-              </div>
-              <button type="button" class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer start-0 group focus:outline-none" data-carousel-prev>
-                  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                      </svg>
-                      <span class="sr-only">Previous</span>
-                  </span>
-              </button>
-              <button type="button" class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none" data-carousel-next>
-                  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                      </svg>
-                      <span class="sr-only">Next</span>
-                  </span>
-              </button>
-          </div>
-          
-            <!-- Details Section -->
-            <div class="p-4 text-center">
-              <h3 class="mb-3 font-bold text-l">Product Sales & Inventory System</h3>
-              <a target="_blank" href="https://github.com/allanjustine" class="text-teal-500 hover:underline">View Github</a>
-            </div>
-          </div>
-          <div class="flex space-x-8">
-            <div
-            class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-start w-80"
-            data-aos="zoom-in"
-          >
-            <div id="default-carousel" class="relative w-full" data-carousel="static">
-              <div class="relative overflow-hidden rounded-lg h-[200px] md:h-[230px]">
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                      <img src="images/1.png" class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                  </div>
-              </div>
-          </div>
-          
-            <!-- Details Section -->
-            <div class="p-4 text-center">
-              <h3 class="mb-3 font-bold text-l">Computer Monitoring System</h3>
-              <a target="_blank" href="https://github.com/allanjustine/computer_monitoring" class="text-teal-500 hover:underline">View Github</a>
-            </div>
-          </div>
-          <div class="flex space-x-8">
-            <div
-            class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-start w-80"
-            data-aos="zoom-in"
-          >
-            <div id="default-carousel" class="relative w-full" data-carousel="static">
-              <div class="relative overflow-hidden rounded-lg h-[200px] md:h-[230px]">
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                      <img src="images/2.png" class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                  </div>
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                      <img src="images/11.png" class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                  </div>
-              </div>
-              <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 rtl:space-x-reverse">
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-              </div>
-              <button type="button" class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer start-0 group focus:outline-none" data-carousel-prev>
-                  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                      </svg>
-                      <span class="sr-only">Previous</span>
-                  </span>
-              </button>
-              <button type="button" class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none" data-carousel-next>
-                  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                      </svg>
-                      <span class="sr-only">Next</span>
-                  </span>
-              </button>
-          </div>
-          
-            <!-- Details Section -->
-            <div class="p-4 text-center">
-              <h3 class="mb-3 font-bold text-l">Digital Camera Store System</h3>
-              <a target="_blank" href="https://github.com/allanjustine/Digital-Camera-Store" class="text-teal-500 hover:underline">View Github</a>
-            </div>
-          </div>
-          <div class="flex space-x-8">
-            <div
-            class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-start w-80"
-            data-aos="zoom-in"
-          >
-            <div id="default-carousel" class="relative w-full" data-carousel="static">
-              <div class="relative overflow-hidden rounded-lg h-[200px] md:h-[230px]">
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                      <img src="images/3.png" class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                  </div>
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                      <img src="images/4.png" class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                  </div>
-              </div>
-              <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 rtl:space-x-reverse">
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-              </div>
-              <button type="button" class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer start-0 group focus:outline-none" data-carousel-prev>
-                  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                      </svg>
-                      <span class="sr-only">Previous</span>
-                  </span>
-              </button>
-              <button type="button" class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none" data-carousel-next>
-                  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                      </svg>
-                      <span class="sr-only">Next</span>
-                  </span>
-              </button>
-          </div>
-          
-            <!-- Details Section -->
-            <div class="p-4 text-center">
-              <h3 class="mb-3 font-bold text-l">Ship Ticket Online Booking</h3>
-              <a target="_blank" href="https://github.com/allanjustine/Shipping-Management-System-Mini-Capstone" class="text-teal-500 hover:underline">View Github</a>
-            </div>
-          </div>
-          <div class="flex space-x-8">
-            <div
-            class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-start w-80"
-            data-aos="zoom-in"
-          >
-            <div id="default-carousel" class="relative w-full" data-carousel="static">
-              <div class="relative overflow-hidden rounded-lg h-[200px] md:h-[230px]">
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                      <img src="images/10.png" class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                  </div>
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                      <img src="images/7.png" class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                  </div>
-              </div>
-              <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 rtl:space-x-reverse">
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-              </div>
-              <button type="button" class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer start-0 group focus:outline-none" data-carousel-prev>
-                  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                      </svg>
-                      <span class="sr-only">Previous</span>
-                  </span>
-              </button>
-              <button type="button" class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none" data-carousel-next>
-                  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                      </svg>
-                      <span class="sr-only">Next</span>
-                  </span>
-              </button>
-          </div>
-          
-            <!-- Details Section -->
-            <div class="p-4 text-center">
-              <h3 class="mb-3 font-bold text-l">Coffe Online Ordering System</h3>
-              <a target="_blank" href="https://github.com/allanjustine/Coffee-Shop-Mini-Casptone" class="text-teal-500 hover:underline">View Github</a>
-            </div>
-          </div>
-          <div class="flex space-x-8">
-            <div
-            class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-start w-80"
-            data-aos="zoom-in"
-          >
-            <div id="default-carousel" class="relative w-full" data-carousel="static">
-              <div class="relative overflow-hidden rounded-lg h-[200px] md:h-[230px]">
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                      <img src="images/5.png" class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                  </div>
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                      <img src="images/12.png" class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                  </div>
-              </div>
-              <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 rtl:space-x-reverse">
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-              </div>
-              <button type="button" class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer start-0 group focus:outline-none" data-carousel-prev>
-                  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                      </svg>
-                      <span class="sr-only">Previous</span>
-                  </span>
-              </button>
-              <button type="button" class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none" data-carousel-next>
-                  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                      </svg>
-                      <span class="sr-only">Next</span>
-                  </span>
-              </button>
-          </div>
-          
-            <!-- Details Section -->
-            <div class="p-4 text-center">
-              <h3 class="mb-3 font-bold text-l">Tourist Management System</h3>
-              <a target="_blank" href="https://github.com/allanjustine/Tourist-Management-System-Mini-Capstone" class="text-teal-500 hover:underline">View Github</a>
-            </div>
-          </div>
-          <div class="flex space-x-8">
-            <div
-            class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-start w-80"
-            data-aos="zoom-in"
-          >
-            <div id="default-carousel" class="relative w-full" data-carousel="static">
-              <div class="relative overflow-hidden rounded-lg h-[200px] md:h-[230px]">
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                      <img src="images/13.png" class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                  </div>
-              </div>
-          </div>
-          
-            <!-- Details Section -->
-            <div class="p-4 text-center">
-              <h3 class="mb-3 font-bold text-l">Clinic Management System</h3>
-              <a target="_blank" href="https://github.com/allanjustine/Clinic-Management-System" class="text-teal-500 hover:underline">View Github</a>
-            </div>
-          </div>
-          <div class="flex space-x-8">
-            <div
-            class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-start w-80"
-            data-aos="zoom-in"
-          >
-            <div id="default-carousel" class="relative w-full" data-carousel="static">
-              <div class="relative overflow-hidden rounded-lg h-[200px] md:h-[230px]">
-                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                      <img src="images/14.png" class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                  </div>
-              </div>
-             
-          </div>
-          
-            <!-- Details Section -->
-            <div class="p-4 text-center">
-              <h3 class="mb-3 font-bold text-l">Water Refilling Ordering Online System</h3>
-              <a target="_blank" href="https://github.com/allanjustine/Water-Refilling-Station" class="text-teal-500 hover:underline">View Github</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="px-10 py-16 bg-gray-200" data-aos="fade-up">
-        <div class="flex flex-col max-w-6xl mx-auto md:flex-row">
-          <div
-            class="flex justify-center mb-8 md:w-1/3 h-1/2 md:justify-start md:mb-0"
-          >
-            <div class="border-teal-500 shadow-lg custom-border">
-              <img
-                class="image"
-                src="images/profile-image.jpg"
-                alt="Allan Justine Mascariñas"
-                class="object-cover w-full h-full"
-              />
-            </div>
-          </div>
-          
-        
-          <div class="text-center md:w-2/3 md:ml-8 md:text-left">
-            <h2 class="mb-4 text-3xl font-bold text-cyan-500">About Me</h2>
-            
-        <hr class="border border-cyan-600 w-[50px] mb-8 mx-auto md:mx-0" />
-            <p class="mb-4 text-lg">
-              "I'm a full-stack web developer with hands-on experience in <strong>Laravel</strong>, <strong>React</strong>, <strong>Livewire</strong>, <strong>Vue</strong>, and more. Passionate about tackling complex problems and crafting efficient solutions, I continuously seek to expand my skills and knowledge to stay at the forefront of technology."
-            </p>
-            <div class="flex justify-center">
-              <hr class="w-1/4 my-4 border-gray-300 border-t-1" />
-              <span class="mx-2 mt-1"><h3 class="text-lg font-bold">
-                My Timeline
-              </h3></span>
-              <hr class="w-1/4 my-4 border-gray-300 border-t-1" />
-            </div>
-
-            <ol class="relative border-s border-cyan-700 dark:border-cyan-700">
-              <li class="mb-10 ms-7">
-                <div class="absolute flex items-center justify-center w-8 h-8 rounded-full bg-cyan-500 -start-4 dark:bg-cyan-700">
-                  <!-- Example icon from Heroicons -->
-                  <i class="text-white fas fa-user"></i>
-                </div>
-                <div class="mb-1 font-bold text-md text-cyan-500">Personal Information</div>
-                <p class="text-base font-normal"><strong>Name</strong>: Allan Justine Mascariñas</p>
-                <p class="text-base font-normal"><strong>Address</strong>: Tinangnan, Tubigon, Bohol</p>
-                <p class="text-base font-normal"><strong>Mobile Number</strong>: 09512072888</p>
-                <p class="text-base font-normal"><strong>Email</strong>: labya31@gmail.com</p>
-                <p class="text-base font-normal"><strong>Age</strong>: 23</p>
-              
-              </li>
-              <li class="mb-10 ms-7">
-                <div class="absolute flex items-center justify-center w-8 h-8 rounded-full bg-cyan-500 -start-4 dark:bg-cyan-700">
-                  <!-- Example icon from Heroicons -->
-                  <i class="text-white fas fa-school"></i>
-                </div>
-                <div class="mb-1 font-bold text-md text-cyan-500">School Graduated</div>
-                <p class="text-base font-normal"><strong>School Name</strong>: Mater Dei College</p>
-                <p class="text-base font-normal"><strong>Year Graduated</strong>: 2023</p>
-              
-              </li>
-              <li class="mb-10 ms-7">
-                <div class="absolute flex items-center justify-center w-8 h-8 rounded-full bg-cyan-500 -start-4 dark:bg-cyan-700">
-                  <!-- Example icon from Heroicons -->
-                  <i class="text-white fas fa-code"></i>
-                </div>
-                <div class="mb-1 font-bold text-md text-cyan-500">Language and Tools</div>
-                <p class="text-base font-normal"><strong>Laravel, Livewire, React, Vue, HTML, CSS, Tailwind, Bootstrap, Spatie, Post Man, VS Code, MySQL, XAMPP</strong></p>
-              
-              </li>
-             
-            </ol>
-          </div>
-        </div>
-      </section>
-      <section id="contact" class="px-2 py-16" data-aos="fade-up">
-        <h2 class="mb-2 text-3xl font-bold text-center text-cyan-500">
-          Contact Me
-        </h2>
-        
-        <hr class="border border-cyan-600 w-[100px] mb-8 mx-auto" />
-        <form id="contact-form" class="max-w-lg mx-auto">
-          <div class="mb-4">
-            <label for="name" class="block text-sm font-medium text-gray-700"
-              >Name</label
+              class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-start w-80"
+              data-aos="zoom-in"
             >
-            <input
-              type="text"
-              id="name"
-              class="block w-full p-2 mt-1 text-sm border border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500"
-            />
-            <p
-              id="name-error"
-              class="mt-1 text-sm text-red-600 error-message"
-            ></p>
-          </div>
-          <div class="mb-4">
-            <label for="email" class="block text-sm font-medium text-gray-700"
-              >Email</label
-            >
-            <input
-              type="email"
-              id="email"
-              class="block w-full p-2 mt-1 text-sm border border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500"
-            />
-            <p
-              id="email-error"
-              class="mt-1 text-sm text-red-600 error-message"
-            ></p>
-          </div>
-          <div class="mb-4">
-            <label for="message" class="block text-sm font-medium text-gray-700"
-              >Message</label
-            >
-            <textarea
-              id="message"
-              rows="4"
-              class="block w-full p-2 mt-1 text-sm border border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500"
-            ></textarea>
-            <p
-              id="message-error"
-              class="mt-1 text-sm text-red-600 error-message"
-            ></p>
-          </div>
-          <div class="flex justify-center">
-            <button
-              type="submit"
-              class="flex items-center px-4 py-2 space-x-2 text-white transition-transform duration-300 ease-in-out transform bg-teal-500 rounded-md shadow-lg hover:bg-teal-600 hover:-translate-y-1 hover:scale-105"
-            >
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5"
+              <div
+                id="default-carousel"
+                class="relative w-full"
+                data-carousel="static"
               >
-                <path
-                  d="M11.5003 12H5.41872M5.24634 12.7972L4.24158 15.7986C3.69128 17.4424 3.41613 18.2643 3.61359 18.7704C3.78506 19.21 4.15335 19.5432 4.6078 19.6701C5.13111 19.8161 5.92151 19.4604 7.50231 18.7491L17.6367 14.1886C19.1797 13.4942 19.9512 13.1471 20.1896 12.6648C20.3968 12.2458 20.3968 11.7541 20.1896 11.3351C19.9512 10.8529 19.1797 10.5057 17.6367 9.81135L7.48483 5.24303C5.90879 4.53382 5.12078 4.17921 4.59799 4.32468C4.14397 4.45101 3.77572 4.78336 3.60365 5.22209C3.40551 5.72728 3.67772 6.54741 4.22215 8.18767L5.24829 11.2793C5.34179 11.561 5.38855 11.7019 5.407 11.8459C5.42338 11.9738 5.42321 12.1032 5.40651 12.231C5.38768 12.375 5.34057 12.5157 5.24634 12.7972Z"
-                  stroke="#ffffff"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </svg>
-              <span>Send Message</span>
-            </button>
-          </div>
-        </form>
-      </section>
+                <div
+                  class="relative overflow-hidden rounded-lg h-[200px] md:h-[230px]"
+                >
+                  <div
+                    class="hidden duration-700 ease-in-out"
+                    data-carousel-item
+                  >
+                    <img
+                      src="images/9.png"
+                      class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                      alt="..."
+                    />
+                  </div>
+                  <div
+                    class="hidden duration-700 ease-in-out"
+                    data-carousel-item
+                  >
+                    <img
+                      src="images/6.png"
+                      class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div
+                  class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 rtl:space-x-reverse"
+                >
+                  <button
+                    type="button"
+                    class="w-3 h-3 rounded-full"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                    data-carousel-slide-to="0"
+                  ></button>
+                  <button
+                    type="button"
+                    class="w-3 h-3 rounded-full"
+                    aria-current="false"
+                    aria-label="Slide 2"
+                    data-carousel-slide-to="1"
+                  ></button>
+                </div>
+                <button
+                  type="button"
+                  class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer start-0 group focus:outline-none"
+                  data-carousel-prev
+                >
+                  <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                  >
+                    <svg
+                      class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 6 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 1 1 5l4 4"
+                      />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                  </span>
+                </button>
+                <button
+                  type="button"
+                  class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none"
+                  data-carousel-next
+                >
+                  <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                  >
+                    <svg
+                      class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 6 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 9 4-4-4-4"
+                      />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                  </span>
+                </button>
+              </div>
 
+              <div class="p-4 text-center">
+                <h3 class="mb-3 font-bold text-l">
+                  Product Sales & Inventory System
+                </h3>
+                <a
+                  target="_blank"
+                  href="https://github.com/allanjustine"
+                  class="text-teal-500 hover:underline"
+                  >View Github</a
+                >
+              </div>
+            </div>
+            <div class="flex space-x-8">
+              <div
+                class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-start w-80"
+                data-aos="zoom-in"
+              >
+                <div
+                  id="default-carousel"
+                  class="relative w-full"
+                  data-carousel="static"
+                >
+                  <div
+                    class="relative overflow-hidden rounded-lg h-[200px] md:h-[230px]"
+                  >
+                    <div
+                      class="hidden duration-700 ease-in-out"
+                      data-carousel-item
+                    >
+                      <img
+                        src="images/1.png"
+                        class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="p-4 text-center">
+                  <h3 class="mb-3 font-bold text-l">
+                    Computer Monitoring System
+                  </h3>
+                  <a
+                    target="_blank"
+                    href="https://github.com/allanjustine/computer_monitoring"
+                    class="text-teal-500 hover:underline"
+                    >View Github</a
+                  >
+                </div>
+              </div>
+              <div class="flex space-x-8">
+                <div
+                  class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-start w-80"
+                  data-aos="zoom-in"
+                >
+                  <div
+                    id="default-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <div
+                      class="relative overflow-hidden rounded-lg h-[200px] md:h-[230px]"
+                    >
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="images/2.png"
+                          class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="images/11.png"
+                          class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 rtl:space-x-reverse"
+                    >
+                      <button
+                        type="button"
+                        class="w-3 h-3 rounded-full"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                        data-carousel-slide-to="0"
+                      ></button>
+                      <button
+                        type="button"
+                        class="w-3 h-3 rounded-full"
+                        aria-current="false"
+                        aria-label="Slide 2"
+                        data-carousel-slide-to="1"
+                      ></button>
+                    </div>
+                    <button
+                      type="button"
+                      class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer start-0 group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M5 1 1 5l4 4"
+                          />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="m1 9 4-4-4-4"
+                          />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+
+                  <div class="p-4 text-center">
+                    <h3 class="mb-3 font-bold text-l">
+                      Digital Camera Store System
+                    </h3>
+                    <a
+                      target="_blank"
+                      href="https://github.com/allanjustine/Digital-Camera-Store"
+                      class="text-teal-500 hover:underline"
+                      >View Github</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="flex space-x-8">
+                <div
+                  class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-start w-80"
+                  data-aos="zoom-in"
+                >
+                  <div
+                    id="default-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <div
+                      class="relative overflow-hidden rounded-lg h-[200px] md:h-[230px]"
+                    >
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="images/3.png"
+                          class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="images/4.png"
+                          class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 rtl:space-x-reverse"
+                    >
+                      <button
+                        type="button"
+                        class="w-3 h-3 rounded-full"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                        data-carousel-slide-to="0"
+                      ></button>
+                      <button
+                        type="button"
+                        class="w-3 h-3 rounded-full"
+                        aria-current="false"
+                        aria-label="Slide 2"
+                        data-carousel-slide-to="1"
+                      ></button>
+                    </div>
+                    <button
+                      type="button"
+                      class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer start-0 group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M5 1 1 5l4 4"
+                          />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="m1 9 4-4-4-4"
+                          />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+
+                  <div class="p-4 text-center">
+                    <h3 class="mb-3 font-bold text-l">
+                      Ship Ticket Online Booking
+                    </h3>
+                    <a
+                      target="_blank"
+                      href="https://github.com/allanjustine/Shipping-Management-System-Mini-Capstone"
+                      class="text-teal-500 hover:underline"
+                      >View Github</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="flex space-x-8">
+                <div
+                  class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-start w-80"
+                  data-aos="zoom-in"
+                >
+                  <div
+                    id="default-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <div
+                      class="relative overflow-hidden rounded-lg h-[200px] md:h-[230px]"
+                    >
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="images/10.png"
+                          class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="images/7.png"
+                          class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 rtl:space-x-reverse"
+                    >
+                      <button
+                        type="button"
+                        class="w-3 h-3 rounded-full"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                        data-carousel-slide-to="0"
+                      ></button>
+                      <button
+                        type="button"
+                        class="w-3 h-3 rounded-full"
+                        aria-current="false"
+                        aria-label="Slide 2"
+                        data-carousel-slide-to="1"
+                      ></button>
+                    </div>
+                    <button
+                      type="button"
+                      class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer start-0 group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M5 1 1 5l4 4"
+                          />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="m1 9 4-4-4-4"
+                          />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+
+                  <div class="p-4 text-center">
+                    <h3 class="mb-3 font-bold text-l">
+                      Coffe Online Ordering System
+                    </h3>
+                    <a
+                      target="_blank"
+                      href="https://github.com/allanjustine/Coffee-Shop-Mini-Casptone"
+                      class="text-teal-500 hover:underline"
+                      >View Github</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="flex space-x-8">
+                <div
+                  class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-start w-80"
+                  data-aos="zoom-in"
+                >
+                  <div
+                    id="default-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <div
+                      class="relative overflow-hidden rounded-lg h-[200px] md:h-[230px]"
+                    >
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="images/5.png"
+                          class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="images/12.png"
+                          class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 rtl:space-x-reverse"
+                    >
+                      <button
+                        type="button"
+                        class="w-3 h-3 rounded-full"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                        data-carousel-slide-to="0"
+                      ></button>
+                      <button
+                        type="button"
+                        class="w-3 h-3 rounded-full"
+                        aria-current="false"
+                        aria-label="Slide 2"
+                        data-carousel-slide-to="1"
+                      ></button>
+                    </div>
+                    <button
+                      type="button"
+                      class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer start-0 group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M5 1 1 5l4 4"
+                          />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                      >
+                        <svg
+                          class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="m1 9 4-4-4-4"
+                          />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+
+                  <div class="p-4 text-center">
+                    <h3 class="mb-3 font-bold text-l">
+                      Tourist Management System
+                    </h3>
+                    <a
+                      target="_blank"
+                      href="https://github.com/allanjustine/Tourist-Management-System-Mini-Capstone"
+                      class="text-teal-500 hover:underline"
+                      >View Github</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="flex space-x-8">
+                <div
+                  class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-start w-80"
+                  data-aos="zoom-in"
+                >
+                  <div
+                    id="default-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <div
+                      class="relative overflow-hidden rounded-lg h-[200px] md:h-[230px]"
+                    >
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="images/13.png"
+                          class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="p-4 text-center">
+                    <h3 class="mb-3 font-bold text-l">
+                      Clinic Management System
+                    </h3>
+                    <a
+                      target="_blank"
+                      href="https://github.com/allanjustine/Clinic-Management-System"
+                      class="text-teal-500 hover:underline"
+                      >View Github</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="flex space-x-8">
+                <div
+                  class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-start w-80"
+                  data-aos="zoom-in"
+                >
+                  <div
+                    id="default-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <div
+                      class="relative overflow-hidden rounded-lg h-[200px] md:h-[230px]"
+                    >
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="images/14.png"
+                          class="h-[200px] md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="p-4 text-center">
+                    <h3 class="mb-3 font-bold text-l">
+                      Water Refilling Ordering Online System
+                    </h3>
+                    <a
+                      target="_blank"
+                      href="https://github.com/allanjustine/Water-Refilling-Station"
+                      class="text-teal-500 hover:underline"
+                      >View Github</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="about" class="px-10 py-16 bg-gray-200" data-aos="fade-up">
+      <div class="flex flex-col max-w-6xl mx-auto md:flex-row">
+        <div
+          class="flex justify-center mb-8 md:w-1/3 h-1/2 md:justify-start md:mb-0"
+        >
+          <div class="border-teal-500 shadow-lg custom-border">
+            <img
+              data-aos="flip-right"
+              class="image"
+              src="images/profile-image.jpg"
+              alt="Allan Justine Mascariñas"
+              class="object-cover w-full h-full"
+            />
+          </div>
+        </div>
+        <div class="text-center md:w-2/3 md:ml-8 md:text-left">
+          <h2 class="mb-4 text-3xl font-bold text-cyan-500">About Me</h2>
+          <hr class="border border-cyan-600 w-[50px] mb-8 mx-auto md:mx-0" />
+          <p class="mb-4 text-lg">
+            "I'm a full-stack web developer with hands-on experience in
+            <strong>Laravel</strong>, <strong>React</strong>,
+            <strong>Livewire</strong>, <strong>Vue</strong>, and more.
+            Passionate about tackling complex problems and crafting efficient
+            solutions, I continuously seek to expand my skills and knowledge to
+            stay at the forefront of technology."
+          </p>
+          <div class="flex justify-center">
+            <hr class="w-1/4 my-4 border-gray-300 border-t-1" />
+            <span class="mx-2 mt-1"
+              ><h3 class="text-lg font-bold">My Timeline</h3></span
+            >
+            <hr class="w-1/4 my-4 border-gray-300 border-t-1" />
+          </div>
+
+          <ol class="relative border-s border-cyan-700 dark:border-cyan-700">
+            <li class="mb-10 ms-7">
+              <div
+                class="absolute flex items-center justify-center w-8 h-8 rounded-full bg-cyan-500 -start-4 dark:bg-cyan-700"
+              >
+                <!-- Example icon from Heroicons -->
+                <i class="text-white fas fa-user"></i>
+              </div>
+              <div class="mb-1 font-bold text-md text-cyan-500">
+                Personal Information
+              </div>
+              <p class="text-base font-normal">
+                <strong>Name</strong>: Allan Justine Mascariñas
+              </p>
+              <p class="text-base font-normal">
+                <strong>Address</strong>: Tinangnan, Tubigon, Bohol
+              </p>
+              <p class="text-base font-normal">
+                <strong>Mobile Number</strong>: 09512072888
+              </p>
+              <p class="text-base font-normal">
+                <strong>Email</strong>: labya31@gmail.com
+              </p>
+              <p class="text-base font-normal"><strong>Age</strong>: 23</p>
+            </li>
+            <li class="mb-10 ms-7">
+              <div
+                class="absolute flex items-center justify-center w-8 h-8 rounded-full bg-cyan-500 -start-4 dark:bg-cyan-700"
+              >
+                <!-- Example icon from Heroicons -->
+                <i class="text-white fas fa-school"></i>
+              </div>
+              <div class="mb-1 font-bold text-md text-cyan-500">
+                School Graduated
+              </div>
+              <p class="text-base font-normal">
+                <strong>School Name</strong>: Mater Dei College
+              </p>
+              <p class="text-base font-normal">
+                <strong>Year Graduated</strong>: 2023
+              </p>
+            </li>
+            <li class="mb-10 ms-7">
+              <div
+                class="absolute flex items-center justify-center w-8 h-8 rounded-full bg-cyan-500 -start-4 dark:bg-cyan-700"
+              >
+                <!-- Example icon from Heroicons -->
+                <i class="text-white fas fa-code"></i>
+              </div>
+              <div class="mb-1 font-bold text-md text-cyan-500">
+                Language and Tools
+              </div>
+              <p class="text-base font-normal">
+                <strong
+                  >Laravel, Livewire, React, Vue, HTML, CSS, Tailwind,
+                  Bootstrap, Spatie, Post Man, VS Code, MySQL, XAMPP</strong
+                >
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="px-2 py-16" data-aos="fade-up">
+      <h2 class="mb-2 text-3xl font-bold text-center text-cyan-500">
+        Contact Me
+      </h2>
+
+      <hr class="border border-cyan-600 w-[100px] mb-8 mx-auto" />
+      <form id="contact-form" class="max-w-lg mx-auto">
+        <div class="mb-4">
+          <label for="name" class="block text-sm font-medium text-gray-700"
+            >Name</label
+          >
+          <input
+            type="text"
+            id="name"
+            class="block w-full p-2 mt-1 text-sm border border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500"
+          />
+          <p
+            id="name-error"
+            class="mt-1 text-sm text-red-600 error-message"
+          ></p>
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-sm font-medium text-gray-700"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            class="block w-full p-2 mt-1 text-sm border border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500"
+          />
+          <p
+            id="email-error"
+            class="mt-1 text-sm text-red-600 error-message"
+          ></p>
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-sm font-medium text-gray-700"
+            >Message</label
+          >
+          <textarea
+            id="message"
+            rows="4"
+            class="block w-full p-2 mt-1 text-sm border border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500"
+          ></textarea>
+          <p
+            id="message-error"
+            class="mt-1 text-sm text-red-600 error-message"
+          ></p>
+        </div>
+        <div class="flex justify-center">
+          <button
+            type="submit"
+            class="flex items-center px-4 py-2 space-x-2 text-white transition-transform duration-300 ease-in-out transform bg-teal-500 rounded-md shadow-lg hover:bg-teal-600 hover:-translate-y-1 hover:scale-105"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5"
+            >
+              <path
+                d="M11.5003 12H5.41872M5.24634 12.7972L4.24158 15.7986C3.69128 17.4424 3.41613 18.2643 3.61359 18.7704C3.78506 19.21 4.15335 19.5432 4.6078 19.6701C5.13111 19.8161 5.92151 19.4604 7.50231 18.7491L17.6367 14.1886C19.1797 13.4942 19.9512 13.1471 20.1896 12.6648C20.3968 12.2458 20.3968 11.7541 20.1896 11.3351C19.9512 10.8529 19.1797 10.5057 17.6367 9.81135L7.48483 5.24303C5.90879 4.53382 5.12078 4.17921 4.59799 4.32468C4.14397 4.45101 3.77572 4.78336 3.60365 5.22209C3.40551 5.72728 3.67772 6.54741 4.22215 8.18767L5.24829 11.2793C5.34179 11.561 5.38855 11.7019 5.407 11.8459C5.42338 11.9738 5.42321 12.1032 5.40651 12.231C5.38768 12.375 5.34057 12.5157 5.24634 12.7972Z"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+            <span>Send Message</span>
+          </button>
+        </div>
+      </form>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 
     <script>
@@ -761,65 +1250,114 @@
 
           const progressBar = document.createElement("div");
           progressBar.className = "toast-progress-bar";
-          progressBar.style.width = "100%";
           toast.appendChild(progressBar);
 
           document.body.appendChild(toast);
 
+          progressBar.style.width = "100%";
+
+          // Animate progress bar
           setTimeout(() => {
             progressBar.style.width = "0%";
           }, 0);
 
+          // Fade out and remove toast
+          setTimeout(() => {
+            toast.style.opacity = "0";
+          }, 3000);
+
           setTimeout(() => {
             toast.remove();
-          }, 3000);
+          }, 3500);
         }
       });
     </script>
-    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
 
+    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
   </body>
   <footer class="pt-3 border-t border-gray-200">
     <div class="container mx-auto">
       <div class="flex flex-col items-center justify-between md:flex-row">
-        <div class="mb-4 text-center md:text-left md:mb-0" data-aos="zoom-out-down">
-          <h2 class="mb-2 text-lg font-bold text-cyan-700">SMCT - Des Strong Motors Inc.</h2>
+        <div
+          class="mb-4 text-center md:text-left md:mb-0"
+          data-aos="zoom-out-down"
+        >
+          <h2 class="mb-2 text-lg font-bold text-cyan-700">
+            SMCT - Des Strong Motors Inc.
+          </h2>
           <p class="text-sm text-cyan-800">J.A Clarin, Tagbilaran, Bohol</p>
         </div>
         <div class="mb-4 text-center md:mb-0" data-aos="fade-up">
           <h3 class="mb-2 font-semibold text-md text-cyan-700">Quick Links</h3>
           <ul class="space-y-2">
-            <li><a href="#profile" class="hover:text-cyan-600 text-cyan-700">Profile</a></li>
-            <li><a href="#projects" class="hover:text-cyan-600 text-cyan-700">Projects</a></li>
-            <li><a href="#about" class="hover:text-cyan-600 text-cyan-700">About Me</a></li>
-            <li><a href="#contact" class="hover:text-cyan-600 text-cyan-700">Contact Me</a></li>
+            <li>
+              <a href="#profile" class="hover:text-cyan-600 text-cyan-700"
+                >Profile</a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="hover:text-cyan-600 text-cyan-700"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#about" class="hover:text-cyan-600 text-cyan-700"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-cyan-600 text-cyan-700"
+                >Contact Me</a
+              >
+            </li>
           </ul>
         </div>
         <div class="text-center" data-aos="zoom-out-down">
           <h3 class="mb-2 font-semibold text-md text-cyan-700">Follow Me</h3>
           <div class="flex justify-center space-x-4">
-            <a href="https://www.facebook.com" target="_blank" rel="noreferrer" class="text-gray-400 hover:text-cyan-400">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noreferrer"
+              class="text-gray-400 hover:text-cyan-400"
+            >
               <i class="fab fa-facebook"></i>
             </a>
             <!-- Instagram -->
-            <a href="https://www.instagram.com" target="_blank" rel="noreferrer" class="text-gray-400 hover:text-cyan-400">
-             <i class="fab fa-instagram"></i>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noreferrer"
+              class="text-gray-400 hover:text-cyan-400"
+            >
+              <i class="fab fa-instagram"></i>
             </a>
             <!-- X (Twitter) -->
-            <a href="https://x.com" target="_blank" rel="noreferrer" class="text-gray-400 hover:text-cyan-400">
+            <a
+              href="https://x.com"
+              target="_blank"
+              rel="noreferrer"
+              class="text-gray-400 hover:text-cyan-400"
+            >
               <i class="fa-brands fa-x-twitter"></i>
             </a>
             <!-- LinkedIn -->
-            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" class="text-gray-400 hover:text-cyan-400">
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+              class="text-gray-400 hover:text-cyan-400"
+            >
               <i class="fa-brands fa-linkedin"></i>
             </a>
           </div>
         </div>
       </div>
       <div class="pt-4 my-6 text-center border-t border-gray-200">
-        <p class="text-sm text-cyan-800">&copy; 2024 Allan Justine Mascariñas. All rights reserved.</p>
+        <p class="text-sm text-cyan-800">
+          &copy; 2024 Allan Justine Mascariñas. All rights reserved.
+        </p>
       </div>
     </div>
   </footer>
-  
 </html>
