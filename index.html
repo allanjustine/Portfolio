@@ -183,7 +183,8 @@
   </head>
   <body class="text-gray-800 bg-gray-100">
     <nav
-      class="fixed z-50 w-full max-w-screen-lg transform -translate-x-1/2 rounded-md top-5 left-1/2 glass"
+      id="navbar"
+      class="fixed z-50 w-full max-w-screen-lg transform -translate-x-1/2 rounded-md top-5 left-1/2"
     >
       <div
         class="container flex flex-wrap items-center justify-between px-4 py-5 mx-auto"
@@ -1854,7 +1855,7 @@
 
           if (!hasError) {
             form.reset();
-            showToast("Your message was sent!");
+            showToast("Your message was sent successfully!");
           }
         });
 
@@ -1910,6 +1911,20 @@
             behavior: "smooth",
           });
         });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("scroll", function() {
+          const navbar = document.getElementById("navbar");
+  
+          if(window.scrollY > 20) {
+            navbar.classList.add("glass");
+          } else {
+            navbar.classList.remove("glass");
+          }
+        });
+      });
     </script>
 
     <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
