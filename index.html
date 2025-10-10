@@ -5,22 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Allan Justine Mascariñas - Full-Stack Web Developer</title>
     <meta name="author" content="Allan Justine Mascariñas" />
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow" />
     <meta
       name="description"
       content="Hi, I'm Allan Justine Mascariñas, a passionate full-stack web developer dedicated to building powerful and efficient web applications. My tech stack includes Laravel, Livewire, Next.js, Vue.js, React.js, Nest.js, TypeScript, JavaScript, Tailwind CSS, Bootstrap, HTML, and CSS."
     />
-    <meta property="og:title" content="Allan Justine Mascariñas - Full-Stack Web Developer">
-    <meta property="og:description" content="Hi, I'm Allan Justine Mascariñas, a passionate full-stack web developer dedicated to building powerful and efficient web applications. My tech stack includes Laravel, Livewire, Next.js, Vue.js, React.js, Nest.js, TypeScript, JavaScript, Tailwind CSS, Bootstrap, HTML, and CSS.">
-    <meta property="og:image" content="https://allanjustine.github.io/Portfolio/images/profile-image.jpg">
-    <meta property="og:url" content="https://allanjustine.github.io/Portfolio/">
-    <meta property="og:type" content="website">
+    <meta
+      property="og:title"
+      content="Allan Justine Mascariñas - Full-Stack Web Developer"
+    />
+    <meta
+      property="og:description"
+      content="Hi, I'm Allan Justine Mascariñas, a passionate full-stack web developer dedicated to building powerful and efficient web applications. My tech stack includes Laravel, Livewire, Next.js, Vue.js, React.js, Nest.js, TypeScript, JavaScript, Tailwind CSS, Bootstrap, HTML, and CSS."
+    />
+    <meta
+      property="og:image"
+      content="https://allanjustine.github.io/Portfolio/images/profile-image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://allanjustine.github.io/Portfolio/"
+    />
+    <meta property="og:type" content="website" />
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Allan Justine Mascariñas - Full-Stack Web Developer">
-    <meta name="twitter:description" content="Hi, I'm Allan Justine Mascariñas, a passionate full-stack web developer dedicated to building powerful and efficient web applications. My tech stack includes Laravel, Livewire, Next.js, Vue.js, React.js, Nest.js, TypeScript, JavaScript, Tailwind CSS, Bootstrap, HTML, and CSS.">
-    <meta name="twitter:image" content="https://allanjustine.github.io/Portfolio/images/profile-image.jpg">
-    <meta name="twitter:site" content="https://allanjustine.github.io/Portfolio/">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Allan Justine Mascariñas - Full-Stack Web Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Hi, I'm Allan Justine Mascariñas, a passionate full-stack web developer dedicated to building powerful and efficient web applications. My tech stack includes Laravel, Livewire, Next.js, Vue.js, React.js, Nest.js, TypeScript, JavaScript, Tailwind CSS, Bootstrap, HTML, and CSS."
+    />
+    <meta
+      name="twitter:image"
+      content="https://allanjustine.github.io/Portfolio/images/profile-image.jpg"
+    />
+    <meta
+      name="twitter:site"
+      content="https://allanjustine.github.io/Portfolio/"
+    />
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -67,137 +91,7 @@
     />
 
     <link rel="shortcut icon" href="logo/icon.png" type="image/x-icon" />
-
-    <style>
-      * {
-        box-sizing: border-box;
-        font-family: "Quicksand", sans-serif;
-      }
-
-      body {
-        scroll-behavior: smooth;
-        overflow-x: hidden;
-      }
-      .custom-border {
-        border-top-left-radius: 120px;
-        border-bottom-right-radius: 120px;
-        overflow: hidden;
-      }
-      .image {
-        transition: transform 0.3s ease-in-out;
-      }
-
-      .image:hover {
-        transform: scale(1.05) rotate(3deg);
-      }
-      .glass {
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      }
-      .toast {
-        position: fixed;
-        top: 20px;
-        z-index: 50;
-        right: 20px;
-        background-color: #15c7a7;
-        color: white;
-        padding: 16px;
-        border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        opacity: 1;
-        transition: opacity 0.5s ease;
-      }
-
-      .toast-message {
-        font-size: 14px;
-      }
-
-      .toast-progress-bar {
-        height: 4px;
-        background-color: #080808;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        transition: width 3.5s ease;
-      }
-      .typing-animation {
-        font-size: 2.6rem;
-        font-weight: bold;
-        color: white;
-        white-space: nowrap;
-        overflow: hidden;
-        border-right: 0.15em solid #fff;
-        animation: typing 3.5s steps(40, end),
-          blink-caret 0.75s step-end infinite;
-      }
-
-      @keyframes typing {
-        from {
-          width: 0;
-        }
-        to {
-          width: 100%;
-        }
-      }
-
-      @keyframes blink-caret {
-        from,
-        to {
-          border-color: transparent;
-        }
-        50% {
-          border-color: white;
-        }
-      }
-      .slider {
-        margin-top: 5px;
-        width: 100%;
-        height: 120px;
-        overflow: hidden;
-        background-color: #cef9f9;
-      }
-      .slider ul {
-        width: 100%;
-        min-width: calc(110px * var(--quantity));
-        position: relative;
-      }
-      .slider ul li {
-        position: absolute;
-        left: 100%;
-        animation: AutoRun var(--time) linear infinite;
-        animation-delay: calc(
-          var(--time) / var(--quantity) * (var(--index) - 1) - 30s
-        );
-        animation-play-state: running;
-      }
-      .slider:hover ul li {
-        animation-play-state: paused;
-      }
-      .slider ul li img {
-        width: 100px;
-        margin-top: 10px;
-        height: auto;
-        filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
-        transition: transform 0.3s ease-in-out;
-      }
-      .slider ul li img:hover {
-        transform: scale(1.1);
-      }
-      .scrollbar-hide::-webkit-scrollbar {
-        display: none;
-      }
-      .scrollbar-hide {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-      @keyframes AutoRun {
-        to {
-          left: -250px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="overflow-x-hidden text-gray-800 bg-gray-100">
     <nav
@@ -283,18 +177,25 @@
         id="profile"
         class="flex items-center justify-center h-screen bg-center bg-cover"
         style="background-image: url('images/bg.png')"
-        data-aos-duration="1500" data-aos="fade-down"
+        data-aos-duration="1500"
+        data-aos="fade-down"
       >
         <div
           class="flex items-center justify-center w-full h-full p-8 bg-black bg-opacity-50 rounded-lg"
         >
           <div class="text-center">
-            <h1 class="mb-8 text-4xl font-bold text-white"
-            data-aos-duration="1500" data-aos="zoom-out-down"
+            <h1
+              class="mb-8 text-4xl font-bold text-white"
+              data-aos-duration="1500"
+              data-aos="zoom-out-down"
             >
               Welcome to My Portfolio
             </h1>
-            <p class="mb-8 text-lg text-white" data-aos-duration="1500" data-aos="zoom-out-up">
+            <p
+              class="mb-8 text-lg text-white"
+              data-aos-duration="1500"
+              data-aos="zoom-out-up"
+            >
               Hi, I'm <strong><u>Allan Justine Mascariñas</u></strong
               >, a full-stack web developer with a passion for creating
               beautiful and functional websites.
@@ -360,7 +261,12 @@
     </div>
 
     <div class="container mx-auto">
-      <section id="projects" class="py-10" data-aos-duration="1000" data-aos="fade-up">
+      <section
+        id="projects"
+        class="py-10"
+        data-aos-duration="1000"
+        data-aos="fade-up"
+      >
         <h2 class="mb-2 text-3xl font-bold text-center text-cyan-500">
           My Projects
         </h2>
@@ -411,7 +317,8 @@
             <div class="flex space-x-8">
               <div
                 class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-center w-80"
-                data-aos-duration="1000" data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos="zoom-in"
               >
                 <div
                   id="default-carousel"
@@ -537,7 +444,8 @@
               <div class="flex space-x-8">
                 <div
                   class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-center w-80"
-                  data-aos-duration="1000" data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos="zoom-in"
                 >
                   <div
                     id="default-carousel"
@@ -575,7 +483,8 @@
                 <div class="flex space-x-8">
                   <div
                     class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-center w-80"
-                    data-aos-duration="1000" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos="zoom-in"
                   >
                     <div
                       id="default-carousel"
@@ -694,7 +603,8 @@
                 <div class="flex space-x-8">
                   <div
                     class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-center w-80"
-                    data-aos-duration="1000" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos="zoom-in"
                   >
                     <div
                       id="default-carousel"
@@ -813,7 +723,8 @@
                 <div class="flex space-x-8">
                   <div
                     class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-center w-80"
-                    data-aos-duration="1000" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos="zoom-in"
                   >
                     <div
                       id="default-carousel"
@@ -932,7 +843,8 @@
                 <div class="flex space-x-8">
                   <div
                     class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-center w-80"
-                    data-aos-duration="1000" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos="zoom-in"
                   >
                     <div
                       id="default-carousel"
@@ -1051,7 +963,8 @@
                 <div class="flex space-x-8">
                   <div
                     class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-center w-80"
-                    data-aos-duration="1000" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos="zoom-in"
                   >
                     <div
                       id="default-carousel"
@@ -1090,7 +1003,8 @@
                 <div class="flex space-x-8">
                   <div
                     class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-center w-80"
-                    data-aos-duration="1000" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos="zoom-in"
                   >
                     <div
                       id="default-carousel"
@@ -1128,7 +1042,8 @@
                 <div class="flex space-x-8">
                   <div
                     class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-center w-80"
-                    data-aos-duration="1000" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos="zoom-in"
                   >
                     <div
                       id="default-carousel"
@@ -1292,7 +1207,8 @@
                 <div class="flex space-x-8">
                   <div
                     class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-center w-80"
-                    data-aos-duration="1000" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos="zoom-in"
                   >
                     <div
                       id="default-carousel"
@@ -1444,7 +1360,8 @@
                 <div class="flex space-x-8">
                   <div
                     class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-center w-80"
-                    data-aos-duration="1000" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos="zoom-in"
                   >
                     <div
                       id="default-carousel"
@@ -1562,7 +1479,8 @@
                 <div class="flex space-x-8">
                   <div
                     class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-center w-80"
-                    data-aos-duration="1000" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos="zoom-in"
                   >
                     <div
                       id="default-carousel"
@@ -1697,7 +1615,8 @@
                 <div class="flex space-x-8">
                   <div
                     class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-center w-80"
-                    data-aos-duration="1000" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos="zoom-in"
                   >
                     <div
                       id="default-carousel"
@@ -1800,9 +1719,7 @@
                       </button>
                     </div>
                     <div class="p-4 text-center">
-                      <h3 class="mb-3 font-bold text-l">
-                        Online Request Form
-                      </h3>
+                      <h3 class="mb-3 font-bold text-l">Online Request Form</h3>
                       <div class="flex flex-col gap-2">
                         <a
                           target="_blank"
@@ -1823,7 +1740,8 @@
                 <div class="flex space-x-8">
                   <div
                     class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-center w-80"
-                    data-aos-duration="1000" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos="zoom-in"
                   >
                     <div
                       id="default-carousel"
@@ -1958,7 +1876,8 @@
                 <div class="flex space-x-8">
                   <div
                     class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-center w-80"
-                    data-aos-duration="1000" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos="zoom-in"
                   >
                     <div
                       id="default-carousel"
@@ -2093,7 +2012,8 @@
                 <div class="flex space-x-8">
                   <div
                     class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-center w-80"
-                    data-aos-duration="1000" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos="zoom-in"
                   >
                     <div
                       id="default-carousel"
@@ -2236,7 +2156,8 @@
                 <div class="flex space-x-8">
                   <div
                     class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-center w-80"
-                    data-aos-duration="1000" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos="zoom-in"
                   >
                     <div
                       id="default-carousel"
@@ -2366,6 +2287,410 @@
                           class="text-teal-500 hover:underline"
                           >View Github</a
                         >
+                        <a
+                          target="_blank"
+                          href="https://budget-tracker.smctgroup.ph/"
+                          class="text-teal-500 hover:underline"
+                          >Live Preview</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex space-x-8">
+                  <div
+                    class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-center w-80"
+                    data-aos-duration="1000"
+                    data-aos="zoom-in"
+                  >
+                    <div
+                      id="default-carousel"
+                      class="relative w-full"
+                      data-carousel="static"
+                    >
+                      <div
+                        class="relative overflow-hidden rounded-lg h-[200px] md:h-[230px]"
+                      >
+                        <div
+                          class="hidden duration-700 ease-in-out"
+                          data-carousel-item
+                        >
+                          <img
+                            src="images/42.png"
+                            class="h-[200px] pointer-events-none md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="..."
+                          />
+                        </div>
+                        <div
+                          class="hidden duration-700 ease-in-out"
+                          data-carousel-item
+                        >
+                          <img
+                            src="images/43.png"
+                            class="h-[200px] pointer-events-none md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="..."
+                          />
+                        </div>
+                        <div
+                          class="hidden duration-700 ease-in-out"
+                          data-carousel-item
+                        >
+                          <img
+                            src="images/44.png"
+                            class="h-[200px] pointer-events-none md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 rtl:space-x-reverse"
+                      >
+                        <button
+                          type="button"
+                          class="w-3 h-3 rounded-full"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                          data-carousel-slide-to="0"
+                        ></button>
+                        <button
+                          type="button"
+                          class="w-3 h-3 rounded-full"
+                          aria-current="false"
+                          aria-label="Slide 2"
+                          data-carousel-slide-to="1"
+                        ></button>
+                        <button
+                          type="button"
+                          class="w-3 h-3 rounded-full"
+                          aria-current="false"
+                          aria-label="Slide 3"
+                          data-carousel-slide-to="2"
+                        ></button>
+                      </div>
+                      <button
+                        type="button"
+                        class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer center-0 group focus:outline-none"
+                        data-carousel-prev
+                      >
+                        <span
+                          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                        >
+                          <svg
+                            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 6 10"
+                          >
+                            <path
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 1 1 5l4 4"
+                            />
+                          </svg>
+                          <span class="sr-only">Previous</span>
+                        </span>
+                      </button>
+                      <button
+                        type="button"
+                        class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none"
+                        data-carousel-next
+                      >
+                        <span
+                          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                        >
+                          <svg
+                            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 6 10"
+                          >
+                            <path
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="m1 9 4-4-4-4"
+                            />
+                          </svg>
+                          <span class="sr-only">Next</span>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="p-4 text-center">
+                      <h3 class="mb-3 font-bold text-l">Landing Page</h3>
+                      <div class="flex flex-col gap-2">
+                        <a
+                          target="_blank"
+                          href="https://github.com/allanjustine/SMCT-Landing-Page"
+                          class="text-teal-500 hover:underline"
+                          >View Github</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex space-x-8">
+                  <div
+                    class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-center w-80"
+                    data-aos-duration="1000"
+                    data-aos="zoom-in"
+                  >
+                    <div
+                      id="default-carousel"
+                      class="relative w-full"
+                      data-carousel="static"
+                    >
+                      <div
+                        class="relative overflow-hidden rounded-lg h-[200px] md:h-[230px]"
+                      >
+                        <div
+                          class="hidden duration-700 ease-in-out"
+                          data-carousel-item
+                        >
+                          <img
+                            src="images/45.png"
+                            class="h-[200px] pointer-events-none md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="..."
+                          />
+                        </div>
+                        <div
+                          class="hidden duration-700 ease-in-out"
+                          data-carousel-item
+                        >
+                          <img
+                            src="images/46.png"
+                            class="h-[200px] pointer-events-none md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 rtl:space-x-reverse"
+                      >
+                        <button
+                          type="button"
+                          class="w-3 h-3 rounded-full"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                          data-carousel-slide-to="0"
+                        ></button>
+                        <button
+                          type="button"
+                          class="w-3 h-3 rounded-full"
+                          aria-current="false"
+                          aria-label="Slide 2"
+                          data-carousel-slide-to="1"
+                        ></button>
+                        <button
+                          type="button"
+                          class="w-3 h-3 rounded-full"
+                          aria-current="false"
+                          aria-label="Slide 3"
+                          data-carousel-slide-to="2"
+                        ></button>
+                      </div>
+                      <button
+                        type="button"
+                        class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer center-0 group focus:outline-none"
+                        data-carousel-prev
+                      >
+                        <span
+                          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                        >
+                          <svg
+                            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 6 10"
+                          >
+                            <path
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 1 1 5l4 4"
+                            />
+                          </svg>
+                          <span class="sr-only">Previous</span>
+                        </span>
+                      </button>
+                      <button
+                        type="button"
+                        class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none"
+                        data-carousel-next
+                      >
+                        <span
+                          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                        >
+                          <svg
+                            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 6 10"
+                          >
+                            <path
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="m1 9 4-4-4-4"
+                            />
+                          </svg>
+                          <span class="sr-only">Next</span>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="p-4 text-center">
+                      <h3 class="mb-3 font-bold text-l">
+                        Bayronon Monitoring Sys
+                      </h3>
+                      <div class="flex flex-col gap-2">
+                        <a
+                          target="_blank"
+                          href="https://github.com/allanjustine/Bayronon-Monitoring-Sys"
+                          class="text-teal-500 hover:underline"
+                          >View Github</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex space-x-8">
+                  <div
+                    class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-center w-80"
+                    data-aos-duration="1000"
+                    data-aos="zoom-in"
+                  >
+                    <div
+                      id="default-carousel"
+                      class="relative w-full"
+                      data-carousel="static"
+                    >
+                      <div
+                        class="relative overflow-hidden rounded-lg h-[200px] md:h-[230px]"
+                      >
+                        <div
+                          class="hidden duration-700 ease-in-out"
+                          data-carousel-item
+                        >
+                          <img
+                            src="images/47.png"
+                            class="h-[200px] pointer-events-none md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="..."
+                          />
+                        </div>
+                        <div
+                          class="hidden duration-700 ease-in-out"
+                          data-carousel-item
+                        >
+                          <img
+                            src="images/48.png"
+                            class="h-[200px] pointer-events-none md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 rtl:space-x-reverse"
+                      >
+                        <button
+                          type="button"
+                          class="w-3 h-3 rounded-full"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                          data-carousel-slide-to="0"
+                        ></button>
+                        <button
+                          type="button"
+                          class="w-3 h-3 rounded-full"
+                          aria-current="false"
+                          aria-label="Slide 2"
+                          data-carousel-slide-to="1"
+                        ></button>
+                        <button
+                          type="button"
+                          class="w-3 h-3 rounded-full"
+                          aria-current="false"
+                          aria-label="Slide 3"
+                          data-carousel-slide-to="2"
+                        ></button>
+                      </div>
+                      <button
+                        type="button"
+                        class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer center-0 group focus:outline-none"
+                        data-carousel-prev
+                      >
+                        <span
+                          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                        >
+                          <svg
+                            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 6 10"
+                          >
+                            <path
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 1 1 5l4 4"
+                            />
+                          </svg>
+                          <span class="sr-only">Previous</span>
+                        </span>
+                      </button>
+                      <button
+                        type="button"
+                        class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none"
+                        data-carousel-next
+                      >
+                        <span
+                          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                        >
+                          <svg
+                            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 6 10"
+                          >
+                            <path
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="m1 9 4-4-4-4"
+                            />
+                          </svg>
+                          <span class="sr-only">Next</span>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="p-4 text-center">
+                      <h3 class="mb-3 font-bold text-l">Resotrack Sys</h3>
+                      <div class="flex flex-col gap-2">
+                        <a
+                          target="_blank"
+                          href="https://github.com/allanjustine/Resotrack-Client"
+                          class="text-teal-500 hover:underline"
+                          >View Github (FE)</a
+                        >
+                      </div>
+                      <div class="flex flex-col gap-2">
+                        <a
+                          target="_blank"
+                          href="https://github.com/allanjustine/Resotrack-Server"
+                          class="text-teal-500 hover:underline"
+                          >View Github (BE)</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -2377,14 +2702,20 @@
       </section>
     </div>
 
-    <section id="about" class="px-10 py-16 bg-gray-200" data-aos-duration="1000" data-aos="fade-up">
+    <section
+      id="about"
+      class="px-10 py-16 bg-gray-200"
+      data-aos-duration="1000"
+      data-aos="fade-up"
+    >
       <div class="flex flex-col max-w-6xl mx-auto md:flex-row">
         <div
           class="flex justify-center mb-8 md:w-1/3 h-1/2 md:justify-center md:mb-0"
         >
           <div class="border-teal-500 shadow-lg custom-border">
             <img
-              data-aos-duration="1000" data-aos="flip-right"
+              data-aos-duration="1000"
+              data-aos="flip-right"
               class="image"
               src="images/profile-image.jpg"
               alt="Allan Justine Mascariñas"
@@ -2479,193 +2810,225 @@
 
     <h2
       class="mb-2 text-2xl font-bold text-center mt-14 text-cyan-500"
-      data-aos-duration="1000" data-aos="zoom-in"
+      data-aos-duration="1000"
+      data-aos="zoom-in"
     >
       Language and Tools
     </h2>
 
     <hr
       class="border border-cyan-600 w-[140px] mb-8 mx-auto"
-      data-aos-duration="1000" data-aos="zoom-in"
+      data-aos-duration="1000"
+      data-aos="zoom-in"
     />
     <div class="mb-10 slider" data-aos-duration="1000" data-aos="zoom-in">
       <ul style="--time: 30s; --quantity: 30">
         <li style="--index: 1">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg"
             alt=""
           />
         </li>
         <li style="--index: 2">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
             alt=""
           />
         </li>
         <li style="--index: 3">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/livewire/livewire-original-wordmark.svg"
             alt=""
           />
         </li>
         <li style="--index: 4">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://avatars.githubusercontent.com/u/7535935?s=200&v=4"
             alt=""
           />
         </li>
         <li style="--index: 5">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
             alt=""
           />
         </li>
         <li style="--index: 6">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg"
             alt=""
           />
         </li>
         <li style="--index: 7">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg"
             alt=""
           />
         </li>
         <li style="--index: 8">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
             alt=""
           />
         </li>
         <li style="--index: 9">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
             alt=""
           />
         </li>
         <li style="--index: 10">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg"
             alt=""
           />
         </li>
         <li style="--index: 11">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
             alt=""
           />
         </li>
         <li style="--index: 12">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
             alt=""
           />
         </li>
         <li style="--index: 13">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
             alt=""
           />
         </li>
         <li style="--index: 14">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/visualstudio/visualstudio-plain.svg"
             alt=""
           />
         </li>
         <li style="--index: 15">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/androidstudio/androidstudio-original.svg"
             alt=""
           />
         </li>
         <li style="--index: 16">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
             alt=""
           />
         </li>
         <li style="--index: 17">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
             alt=""
           />
         </li>
         <li style="--index: 18">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://www.vectorlogo.zone/logos/canva/canva-icon.svg"
             alt=""
           />
         </li>
         <li style="--index: 19">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://iconape.com/wp-content/files/ss/133529/png/picsart-icon-logo.png"
             alt=""
           />
         </li>
         <li style="--index: 20">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
             alt=""
           />
         </li>
         <li style="--index: 21">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
             alt=""
           />
         </li>
         <li style="--index: 22">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
             alt=""
           />
         </li>
         <li style="--index: 23">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg"
             alt=""
           />
         </li>
         <li style="--index: 24">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://static.vecteezy.com/system/resources/previews/021/059/827/large_2x/chatgpt-logo-chat-gpt-icon-on-white-background-free-vector.jpg"
             alt=""
           />
         </li>
         <li style="--index: 25">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://www.apachefriends.org/images/xampp-logo-ac950edf.svg"
             alt=""
           />
         </li>
         <li style="--index: 26">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1v6TMElRDdDqPYcrbQVOFSGiaFnXRDIZF9Q&s"
             alt=""
           />
         </li>
         <li style="--index: 27">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://avatars.githubusercontent.com/u/47703742?s=280&v=4"
             alt=""
           />
         </li>
         <li style="--index: 28">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://ih1.redbubble.net/image.4053536786.3862/pp,504x498-pad,600x600,f8f8f8.u1.jpg"
             alt=""
           />
         </li>
         <li style="--index: 29">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png"
             alt=""
           />
         </li>
         <li style="--index: 30">
-          <img class="pointer-events-none"
+          <img
+            class="pointer-events-none"
             src="https://cdn.worldvectorlogo.com/logos/alpinejs.svg"
             alt=""
           />
@@ -2673,7 +3036,12 @@
       </ul>
     </div>
 
-    <section id="contact" class="px-2 py-5" data-aos-duration="1000" data-aos="fade-up">
+    <section
+      id="contact"
+      class="px-2 py-5"
+      data-aos-duration="1000"
+      data-aos="fade-up"
+    >
       <h2 class="mb-2 text-3xl font-bold text-center text-cyan-500">
         Contact Me
       </h2>
@@ -2907,10 +3275,14 @@
       <div class="flex flex-col items-center justify-between md:flex-row">
         <div
           class="mb-4 text-center md:text-left md:mb-0"
-          data-aos-duration="1000" data-aos="zoom-out-right"
+          data-aos-duration="1000"
+          data-aos="zoom-out-right"
         >
           <div class="relative group">
-            <h2 class="mb-2 text-lg font-bold text-cyan-700" title="Currently working at">
+            <h2
+              class="mb-2 text-lg font-bold text-cyan-700"
+              title="Currently working at"
+            >
               SMCT Group of Companies.
             </h2>
 
@@ -2920,7 +3292,11 @@
           </div>
           <p class="text-sm text-cyan-800">J.A Clarin, Tagbilaran, Bohol</p>
         </div>
-        <div class="mb-4 text-center md:mb-0" data-aos-duration="1000" data-aos="fade-up">
+        <div
+          class="mb-4 text-center md:mb-0"
+          data-aos-duration="1000"
+          data-aos="fade-up"
+        >
           <h3 class="mb-2 font-semibold text-md text-cyan-700">Quick Links</h3>
           <ul class="space-y-2">
             <li
@@ -2969,7 +3345,11 @@
             </li>
           </ul>
         </div>
-        <div class="text-center" data-aos-duration="1000" data-aos="zoom-out-left">
+        <div
+          class="text-center"
+          data-aos-duration="1000"
+          data-aos="zoom-out-left"
+        >
           <h3 class="mb-2 font-semibold text-md text-cyan-700">Contact Me</h3>
           <div class="flex justify-center space-x-4">
             <a
