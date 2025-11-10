@@ -96,7 +96,7 @@ body {
   left: 100%;
   animation: AutoRun var(--time) linear infinite;
   animation-delay: calc(
-    var(--time) / var(--quantity) * (var(--index) - 1) - 30s
+    var(--time) / var(--quantity) * (var(--index) - 1) - 35s
   );
   animation-play-state: running;
 }
