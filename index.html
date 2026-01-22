@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -176,7 +176,7 @@
       <section
         id="profile"
         class="flex items-center justify-center h-screen bg-center bg-cover"
-        style="background-image: url('images/bg.png')"
+        style="background-image: url(&quot;images/bg.png&quot;)"
         data-aos-duration="1500"
         data-aos="fade-down"
       >
@@ -2957,9 +2957,7 @@
                       </button>
                     </div>
                     <div class="p-4 text-center">
-                      <h3 class="mb-3 font-bold text-l">
-                        Ticketing System
-                      </h3>
+                      <h3 class="mb-3 font-bold text-l">Ticketing System</h3>
                       <div class="flex flex-col gap-2">
                         <a
                           target="_blank"
@@ -2969,6 +2967,44 @@
                         >
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div
+                  class="flex-shrink-0 overflow-hidden bg-white rounded-md shadow-md snap-center w-80"
+                  data-aos-duration="1000"
+                  data-aos="zoom-in"
+                >
+                  <div
+                    id="default-carousel"
+                    class="relative w-full"
+                    data-carousel="static"
+                  >
+                    <div
+                      class="relative overflow-hidden rounded-lg h-[200px] md:h-[230px]"
+                    >
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="images/55.png"
+                          class="h-[200px] pointer-events-none md:h-[230px] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="p-4 text-center">
+                    <h3 class="mb-3 font-bold text-l">
+                      Scanner Monitoring
+                    </h3>
+                    <a
+                      target="_blank"
+                      href="https://github.com/allanjustine/Scanner-Monitoring.git"
+                      class="text-teal-500 hover:underline"
+                      >View Github</a
+                    >
                   </div>
                 </div>
               </div>
@@ -3440,12 +3476,12 @@
         if (document.documentElement.classList.contains("dark")) {
           themeToggleIcon.setAttribute(
             "d",
-            "M12 4.354A8 8 0 113.646 12 8 8 0 0112 4.354zM12 2a10 10 0 1010 10A10 10 0 0012 2z"
+            "M12 4.354A8 8 0 113.646 12 8 8 0 0112 4.354zM12 2a10 10 0 1010 10A10 10 0 0012 2z",
           );
         } else {
           themeToggleIcon.setAttribute(
             "d",
-            "M12 3v2m0 14v2m-6.364-6.364l1.414-1.414m12.728 0l1.414 1.414M4.636 6.364l1.414 1.414M16.95 18.95l1.414-1.414M12 17a5 5 0 100-10 5 5 0 000 10zm0 1a6 6 0 01-6-6 6 6 0 0112 0 6 6 0 01-6 6z"
+            "M12 3v2m0 14v2m-6.364-6.364l1.414-1.414m12.728 0l1.414 1.414M4.636 6.364l1.414 1.414M16.95 18.95l1.414-1.414M12 17a5 5 0 100-10 5 5 0 000 10zm0 1a6 6 0 01-6-6 6 6 0 0112 0 6 6 0 01-6 6z",
           );
         }
       });
