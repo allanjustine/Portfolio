@@ -2996,9 +2996,7 @@
                   </div>
 
                   <div class="p-4 text-center">
-                    <h3 class="mb-3 font-bold text-l">
-                      Scanner Monitoring
-                    </h3>
+                    <h3 class="mb-3 font-bold text-l">Scanner Monitoring</h3>
                     <a
                       target="_blank"
                       href="https://github.com/allanjustine/Scanner-Monitoring.git"
@@ -3024,15 +3022,23 @@
         <div
           class="flex justify-center mb-8 md:w-1/3 h-1/2 md:justify-center md:mb-0"
         >
-          <div class="border-teal-500 shadow-lg custom-border">
-            <img
-              data-aos-duration="1000"
-              data-aos="flip-right"
-              class="image"
-              src="images/profile-image.jpg"
-              alt="Allan Justine Mascariñas"
-              class="object-cover w-full h-full pointer-events-none"
-            />
+          <div class="flex flex-col">
+            <div class="border-teal-500 shadow-lg custom-border">
+              <img
+                data-aos-duration="1000"
+                data-aos="flip-right"
+                class="image"
+                src="images/profile-image.jpg"
+                alt="Allan Justine Mascariñas"
+                class="object-cover w-full h-full pointer-events-none"
+              />
+            </div>
+            <a
+              href="mailto:labya31@gmail.com"
+              class="flex items-center justify-center gap-1 py-3 mt-5 font-bold text-white transition-all duration-300 ease-in-out group bg-cyan-500 hover:bg-cyan-600 rounded-2xl hover:scale-105 hover:-translate-x-2"
+            >
+              <i class="fa-duotone fa-solid fa-user-tie group-hover:hidden"></i> <i class="hidden fa-solid fa-hand-wave group-hover:block"></i> <span>HIRE ME</span>
+            </a>
           </div>
         </div>
         <div class="text-center md:w-2/3 md:ml-8 md:text-left">
@@ -3545,6 +3551,11 @@
             form.reset();
             showToast("Your message was sent successfully!");
           }
+
+          const subject = `Message from ${name}`;
+          const body = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+
+          window.location.href = `mailto:labya31@gmail.com?subject=${subject}&body=${body}`;
         });
 
         function showToast(message) {
