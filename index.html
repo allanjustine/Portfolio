@@ -116,6 +116,9 @@
           <a href="#about" class="hover:text-cyan-500 text-cyan-400"
             >About Me</a
           >
+          <a href="#languages" class="hover:text-cyan-500 text-cyan-400"
+            >Languages & Tools</a
+          >
           <a href="#contact" class="hover:text-cyan-500 text-cyan-400"
             >Contact Me</a
           >
@@ -157,6 +160,11 @@
           >About Me</a
         >
         <a
+          href="#languages"
+          class="block px-4 py-2 text-cyan-400 hover:text-cyan-500"
+          >Languages & Tools</a
+        >
+        <a
           href="#contact"
           class="block px-4 py-2 text-cyan-400 hover:text-cyan-500"
           >Contact Me</a
@@ -167,7 +175,13 @@
           .getElementById("menu-toggle")
           .addEventListener("click", function () {
             const menu = document.getElementById("mobile-menu");
+            const navbar = document.getElementById("navbar");
             menu.classList.toggle("hidden");
+            if (!menu.classList.contains("hidden")) {
+              navbar.classList.add("glass");
+            } else {
+              navbar.classList.remove("glass");
+            }
           });
       </script>
     </nav>
@@ -3364,268 +3378,270 @@
       </div>
     </section>
 
-    <h2
-      class="mb-2 text-2xl font-bold text-center mt-14 text-cyan-500"
-      data-aos-duration="1000"
-      data-aos="zoom-in"
-    >
-      Language and Tools
-    </h2>
+    <section id="languages">
+      <h2
+        class="mb-2 text-2xl font-bold text-center mt-14 text-cyan-500"
+        data-aos-duration="1000"
+        data-aos="zoom-in"
+      >
+        Language and Tools
+      </h2>
 
-    <hr
-      class="border border-cyan-600 w-[140px] mb-8 mx-auto"
-      data-aos-duration="1000"
-      data-aos="zoom-in"
-    />
-    <div class="mb-10 slider" data-aos-duration="1000" data-aos="zoom-in">
-      <ul style="--time: 35s; --quantity: 35">
-        <li style="--index: 1">
-          <img
-            class="pointer-events-none"
-            src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 2">
-          <img
-            class="pointer-events-none"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 3">
-          <img
-            class="pointer-events-none"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/livewire/livewire-original-wordmark.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 4">
-          <img
-            class="pointer-events-none"
-            src="https://avatars.githubusercontent.com/u/7535935?s=200&v=4"
-            alt=""
-          />
-        </li>
-        <li style="--index: 5">
-          <img
-            class="pointer-events-none"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 6">
-          <img
-            class="pointer-events-none"
-            src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 7">
-          <img
-            class="pointer-events-none"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 8">
-          <img
-            class="pointer-events-none"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 9">
-          <img
-            class="pointer-events-none"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 10">
-          <img
-            class="pointer-events-none"
-            src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 11">
-          <img
-            class="pointer-events-none"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 12">
-          <img
-            class="pointer-events-none"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 13">
-          <img
-            class="pointer-events-none"
-            src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 14">
-          <img
-            class="pointer-events-none"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/visualstudio/visualstudio-plain.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 15">
-          <img
-            class="pointer-events-none"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/androidstudio/androidstudio-original.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 16">
-          <img
-            class="pointer-events-none"
-            src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 17">
-          <img
-            class="pointer-events-none"
-            src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 18">
-          <img
-            class="pointer-events-none"
-            src="https://www.vectorlogo.zone/logos/canva/canva-icon.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 19">
-          <img
-            class="pointer-events-none"
-            src="https://iconape.com/wp-content/files/ss/133529/png/picsart-icon-logo.png"
-            alt=""
-          />
-        </li>
-        <li style="--index: 20">
-          <img
-            class="pointer-events-none"
-            src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 21">
-          <img
-            class="pointer-events-none"
-            src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 22">
-          <img
-            class="pointer-events-none"
-            src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 23">
-          <img
-            class="pointer-events-none"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 24">
-          <img
-            class="pointer-events-none"
-            src="https://static.vecteezy.com/system/resources/previews/021/059/827/large_2x/chatgpt-logo-chat-gpt-icon-on-white-background-free-vector.jpg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 25">
-          <img
-            class="pointer-events-none"
-            src="https://www.apachefriends.org/images/xampp-logo-ac950edf.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 26">
-          <img
-            class="pointer-events-none"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1v6TMElRDdDqPYcrbQVOFSGiaFnXRDIZF9Q&s"
-            alt=""
-          />
-        </li>
-        <li style="--index: 27">
-          <img
-            class="pointer-events-none"
-            src="https://avatars.githubusercontent.com/u/47703742?s=280&v=4"
-            alt=""
-          />
-        </li>
-        <li style="--index: 28">
-          <img
-            class="pointer-events-none"
-            src="https://ih1.redbubble.net/image.4053536786.3862/pp,504x498-pad,600x600,f8f8f8.u1.jpg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 29">
-          <img
-            class="pointer-events-none"
-            src="https://imgs.search.brave.com/aBKPjsiNCTGjassph0gAVVeynZE8DpVzqCCVtk1J330/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/d2lrLmNvbS9jb250/ZW50L3VwbG9hZHMv/aW1hZ2VzL25leHRq/czc2ODUubG9nb3dp/ay5jb20ud2VicA"
-            alt=""
-          />
-        </li>
-        <li style="--index: 30">
-          <img
-            class="pointer-events-none"
-            src="https://cdn.worldvectorlogo.com/logos/alpinejs.svg"
-            alt=""
-          />
-        </li>
-        <li style="--index: 31">
-          <img
-            class="pointer-events-none"
-            src="https://images.seeklogo.com/logo-png/51/1/shadcn-ui-logo-png_seeklogo-519786.png"
-            alt=""
-          />
-        </li>
-        <li style="--index: 32">
-          <img
-            class="pointer-events-none"
-            src="https://imgs.search.brave.com/oS6Gsk_NJANFq48dTCY-MYBvtOw5oDUlec_jmcMSFM0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL2ltYWdlcy82/MmE5YzdjMDhmZjY0/NDFhMjk1MmRhZDMu/cG5n"
-            alt=""
-          />
-        </li>
-        <li style="--index: 33">
-          <img
-            class="pointer-events-none"
-            src="https://images.seeklogo.com/logo-png/42/2/prisma-logo-png_seeklogo-428631.png"
-            alt=""
-          />
-        </li>
-        <li style="--index: 34">
-          <img
-            class="pointer-events-none"
-            src="https://logolook.net/wp-content/uploads/2022/12/GitHub-Logo.png"
-            alt=""
-          />
-        </li>
-        <li style="--index: 35">
-          <img
-            class="pointer-events-none"
-            src="https://imgs.search.brave.com/Do8c_bGcWxEgx5uhNRxnZCaxKdIOh_7Lm-BPKUSryCU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yYXcu/Z2l0aHVidXNlcmNv/bnRlbnQuY29tL2dl/dC1pY29uL2dldGlj/b24vbWFzdGVyL2lj/b25zL3Bvc3RncmVz/cWwtbG9nby5zdmc"
-            alt=""
-          />
-        </li>
-      </ul>
-    </div>
+      <hr
+        class="border border-cyan-600 w-[140px] mb-8 mx-auto"
+        data-aos-duration="1000"
+        data-aos="zoom-in"
+      />
+      <div class="mb-10 slider" data-aos-duration="1000" data-aos="zoom-in">
+        <ul style="--time: 35s; --quantity: 35">
+          <li style="--index: 1">
+            <img
+              class="pointer-events-none"
+              src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 2">
+            <img
+              class="pointer-events-none"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 3">
+            <img
+              class="pointer-events-none"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/livewire/livewire-original-wordmark.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 4">
+            <img
+              class="pointer-events-none"
+              src="https://avatars.githubusercontent.com/u/7535935?s=200&v=4"
+              alt=""
+            />
+          </li>
+          <li style="--index: 5">
+            <img
+              class="pointer-events-none"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 6">
+            <img
+              class="pointer-events-none"
+              src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 7">
+            <img
+              class="pointer-events-none"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 8">
+            <img
+              class="pointer-events-none"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 9">
+            <img
+              class="pointer-events-none"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 10">
+            <img
+              class="pointer-events-none"
+              src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 11">
+            <img
+              class="pointer-events-none"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 12">
+            <img
+              class="pointer-events-none"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 13">
+            <img
+              class="pointer-events-none"
+              src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 14">
+            <img
+              class="pointer-events-none"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/visualstudio/visualstudio-plain.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 15">
+            <img
+              class="pointer-events-none"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/androidstudio/androidstudio-original.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 16">
+            <img
+              class="pointer-events-none"
+              src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 17">
+            <img
+              class="pointer-events-none"
+              src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 18">
+            <img
+              class="pointer-events-none"
+              src="https://www.vectorlogo.zone/logos/canva/canva-icon.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 19">
+            <img
+              class="pointer-events-none"
+              src="https://iconape.com/wp-content/files/ss/133529/png/picsart-icon-logo.png"
+              alt=""
+            />
+          </li>
+          <li style="--index: 20">
+            <img
+              class="pointer-events-none"
+              src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 21">
+            <img
+              class="pointer-events-none"
+              src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 22">
+            <img
+              class="pointer-events-none"
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 23">
+            <img
+              class="pointer-events-none"
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 24">
+            <img
+              class="pointer-events-none"
+              src="https://static.vecteezy.com/system/resources/previews/021/059/827/large_2x/chatgpt-logo-chat-gpt-icon-on-white-background-free-vector.jpg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 25">
+            <img
+              class="pointer-events-none"
+              src="https://www.apachefriends.org/images/xampp-logo-ac950edf.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 26">
+            <img
+              class="pointer-events-none"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1v6TMElRDdDqPYcrbQVOFSGiaFnXRDIZF9Q&s"
+              alt=""
+            />
+          </li>
+          <li style="--index: 27">
+            <img
+              class="pointer-events-none"
+              src="https://avatars.githubusercontent.com/u/47703742?s=280&v=4"
+              alt=""
+            />
+          </li>
+          <li style="--index: 28">
+            <img
+              class="pointer-events-none"
+              src="https://ih1.redbubble.net/image.4053536786.3862/pp,504x498-pad,600x600,f8f8f8.u1.jpg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 29">
+            <img
+              class="pointer-events-none"
+              src="https://imgs.search.brave.com/aBKPjsiNCTGjassph0gAVVeynZE8DpVzqCCVtk1J330/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/d2lrLmNvbS9jb250/ZW50L3VwbG9hZHMv/aW1hZ2VzL25leHRq/czc2ODUubG9nb3dp/ay5jb20ud2VicA"
+              alt=""
+            />
+          </li>
+          <li style="--index: 30">
+            <img
+              class="pointer-events-none"
+              src="https://cdn.worldvectorlogo.com/logos/alpinejs.svg"
+              alt=""
+            />
+          </li>
+          <li style="--index: 31">
+            <img
+              class="pointer-events-none"
+              src="https://images.seeklogo.com/logo-png/51/1/shadcn-ui-logo-png_seeklogo-519786.png"
+              alt=""
+            />
+          </li>
+          <li style="--index: 32">
+            <img
+              class="pointer-events-none"
+              src="https://imgs.search.brave.com/oS6Gsk_NJANFq48dTCY-MYBvtOw5oDUlec_jmcMSFM0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL2ltYWdlcy82/MmE5YzdjMDhmZjY0/NDFhMjk1MmRhZDMu/cG5n"
+              alt=""
+            />
+          </li>
+          <li style="--index: 33">
+            <img
+              class="pointer-events-none"
+              src="https://images.seeklogo.com/logo-png/42/2/prisma-logo-png_seeklogo-428631.png"
+              alt=""
+            />
+          </li>
+          <li style="--index: 34">
+            <img
+              class="pointer-events-none"
+              src="https://logolook.net/wp-content/uploads/2022/12/GitHub-Logo.png"
+              alt=""
+            />
+          </li>
+          <li style="--index: 35">
+            <img
+              class="pointer-events-none"
+              src="https://imgs.search.brave.com/Do8c_bGcWxEgx5uhNRxnZCaxKdIOh_7Lm-BPKUSryCU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yYXcu/Z2l0aHVidXNlcmNv/bnRlbnQuY29tL2dl/dC1pY29uL2dldGlj/b24vbWFzdGVyL2lj/b25zL3Bvc3RncmVz/cWwtbG9nby5zdmc"
+              alt=""
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <section
       id="contact"
@@ -3745,6 +3761,7 @@
             if (targetElement) {
               targetElement.scrollIntoView({
                 behavior: "smooth",
+                block: "center",
               });
             }
           });
@@ -3854,12 +3871,61 @@
       document.addEventListener("DOMContentLoaded", function () {
         document.addEventListener("scroll", function () {
           const navbar = document.getElementById("navbar");
+          const menu = document.getElementById("mobile-menu");
+          const desktopView = window.matchMedia("(min-width: 768px)");
 
-          if (window.scrollY > 20) {
+          if (
+            window.scrollY > 20 ||
+            (!menu.classList.contains("hidden") && !desktopView.matches)
+          ) {
             navbar.classList.add("glass");
           } else {
             navbar.classList.remove("glass");
           }
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll("#navbar a");
+        const mobileNavLinks = document.querySelectorAll("#mobile-menu a");
+        const classes = ["text-cyan-600", "underline"];
+        const defaultClasses = ["text-cyan-400"];
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            if (entries[0].isIntersecting) {
+              navLinks.forEach((link) => {
+                link.classList.remove(...classes);
+                link.classList.add(...defaultClasses);
+              });
+
+              mobileNavLinks.forEach((link) => {
+                link.classList.remove(...classes);
+                link.classList.add(...defaultClasses);
+              });
+
+              const links = document.querySelectorAll(
+                `a[href="#${entries[0].target.id}"]`,
+              );
+
+              console.log(entries[0].target.id)
+
+              links.forEach((link) => {
+                link.classList.add(...classes);
+                link.classList.remove(...defaultClasses);
+              });
+            }
+          },
+          {
+            threshold: 1,
+          },
+        );
+
+        sections.forEach((section) => {
+          observer.observe(section);
         });
       });
     </script>
